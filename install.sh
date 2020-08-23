@@ -17,4 +17,5 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && 
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get install docker-ce docker-ce-cli containerd.io && \
 sudo service docker start && \
-sudo docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+sudo mkdir -p /data/portainer && \
+sudo docker run -d --restart=unless-stopped --network host --name portainer -h portainer -v /var/run/docker.sock:/var/run/docker.sock -v /data/portainer:/data portainer/portainer
