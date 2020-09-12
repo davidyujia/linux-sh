@@ -20,4 +20,4 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io && \
 echo "DOCKER_OPTS=\"-H unix:// -H tcp://127.0.0.1:2375\"" | sudo tee -a /etc/default/docker && \
 sudo service docker start && \
 sudo mkdir -p /data/portainer && \
-sudo docker run -d --restart=unless-stopped --network host --name portainer -h portainer -v /var/run/docker.sock:/var/run/docker.sock -v /data/portainer:/data portainer/portainer
+sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
