@@ -17,6 +17,7 @@ sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent sof
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && \
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get install docker-ce docker-ce-cli containerd.io && \
+echo "DOCKER_OPTS=\"-H unix:// -H tcp://127.0.0.1:2375\"" | sudo tee -a /etc/default/docker && \
 sudo service docker start && \
 sudo mkdir -p /data/portainer && \
 sudo docker run -d --restart=unless-stopped --network host --name portainer -h portainer -v /var/run/docker.sock:/var/run/docker.sock -v /data/portainer:/data portainer/portainer
