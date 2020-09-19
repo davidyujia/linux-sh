@@ -7,6 +7,8 @@ sudo sh ./linux-sh/install.sh
 
 ## Docker Host Setting in Windows
 
+in powershell
+
 ```powershell
 [System.Environment]::SetEnvironmentVariable('DOCKER_HOST','tcp://127.0.0.1:2375',[System.EnvironmentVariableTarget]::User)
 ```
