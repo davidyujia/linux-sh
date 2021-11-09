@@ -2,7 +2,7 @@ sudo apt update && sudo apt -y upgrade \
 # install node.js
 sudo apt install nodejs npm -y && \
 sudo npm i -g n -y && \
-sudo n latest && \
+sudo sudo n stable && \
 sudo apt remove nodejs npm -y \
 # install angular
 sudo npm install -g @angular/cli && \
