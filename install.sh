@@ -1,7 +1,7 @@
-sudo add-apt-repository -y ppa:git-core/ppa \
-sudo apt update && sudo apt -y upgrade \
+sudo add-apt-repository -y ppa:git-core/ppa && \
+sudo apt update && sudo apt -y upgrade && \
 # update git
-sudo apt-get install git -y
+sudo apt-get install git -y && \
 # install node.js
 sudo apt install nodejs npm -y && \
 sudo npm i -g n -y && \
