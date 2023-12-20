@@ -16,3 +16,9 @@ in powershell
 ```powershell
 [System.Environment]::SetEnvironmentVariable('DOCKER_HOST','tcp://127.0.0.1:2375',[System.EnvironmentVariableTarget]::User)
 ```
+
+## VS code insiders
+
+```
+alias code='code-insiders'
+```
