@@ -10,7 +10,7 @@ sudo apt remove nodejs npm -y \
 # install angular
 sudo npm install -g @angular/cli && \
 # install dotnet core
-sudo apt-get install -y dotnet6
+sudo apt-get install -y dotnet-sdk-8.0
 # WOL tool
 # sudo apt-get install wakeonlan
 # Install Flatpak
