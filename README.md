@@ -22,3 +22,13 @@ in powershell
 ```
 alias code='code-insiders'
 ```
+
+## Podman in Windows
+```cmd
+winget install RedHat.Podman
+winget install RedHat.Podman-Desktop
+podman machine init 
+podman machine set --rootful
+podman machine start
+winget install Docker.DockerCLI
+```
