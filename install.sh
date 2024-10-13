@@ -11,6 +11,8 @@ sudo apt remove nodejs npm -y \
 sudo npm install -g @angular/cli && \
 # install dotnet core
 sudo apt-get install -y dotnet-sdk-8.0
+dotnet tool update -g linux-dev-certs
+dotnet linux-dev-certs install
 # autoremove
 sudo apt autoremove -y \
 # WOL tool
