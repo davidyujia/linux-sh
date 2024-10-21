@@ -23,3 +23,6 @@ sudo apt autoremove -y \
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 rm -rf linux-sh
+
+# set git config
+git config --global pull.rebase true
