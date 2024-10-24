@@ -2,11 +2,9 @@
 
 ```cmd
 git clone https://github.com/davidyujia/linux-sh.git && \
-sudo sh ./linux-sh/install.sh
-```
-
-```
-echo "user ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/user
+sudo sh ./linux-sh/install.sh && \
+echo "user ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/user && \
+exit
 ```
 
 ## Docker Host Setting in Windows
