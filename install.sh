@@ -23,6 +23,8 @@ sudo apt autoremove -y \
 # sudo apt install gnome-software-plugin-flatpak -y
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+# rider
+# sudo snap install rider --classic
 rm -rf linux-sh
 
 # set git config
