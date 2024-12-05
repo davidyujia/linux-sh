@@ -10,7 +10,8 @@ sudo apt remove nodejs npm -y \
 # install angular
 sudo npm install -g @angular/cli && \
 # install dotnet core
-sudo apt-get install -y dotnet-sdk-8.0
+sudo add-apt-repository ppa:dotnet/backports
+sudo apt-get install -y dotnet-sdk-9.0
 dotnet tool update -g linux-dev-certs
 dotnet linux-dev-certs install
 # autoremove
