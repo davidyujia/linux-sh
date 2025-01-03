@@ -5,7 +5,7 @@ sudo apt-get install git -y && \
 # install node.js
 sudo apt install nodejs npm -y && \
 sudo npm i -g n -y && \
-sudo sudo n stable && \
+sudo n stable && \
 sudo apt remove nodejs npm -y \
 # install angular
 sudo npm install -g @angular/cli && \
