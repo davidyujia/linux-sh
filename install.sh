@@ -34,11 +34,12 @@ sudo apt-get -y install cuda-toolkit-12-6
 ## remove
 rm -rf linux-sh
 
-# set git config
-git config --global pull.rebase true
-
 # create SSH key
 ssh-keygen -t rsa -b 4096 -f $HOME/.ssh/id_rsa -P ""
 touch ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
+
+# set git config
+git config --global pull.rebase true
+git config --global credential.helper 'store --file ~/.git-credentials'
