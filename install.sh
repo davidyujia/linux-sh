@@ -36,3 +36,9 @@ rm -rf linux-sh
 
 # set git config
 git config --global pull.rebase true
+
+# create SSH key
+ssh-keygen -t rsa -b 4096 -f $HOME/.ssh/id_rsa -P ""
+touch ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
