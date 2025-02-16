@@ -43,3 +43,5 @@ chmod 600 ~/.ssh/authorized_keys
 # set git config
 git config --global pull.rebase true
 git config --global credential.helper 'store --file ~/.git-credentials'
+git config --global user.name davidyujia
+git config --global user.email davidyujia@gmail.com
