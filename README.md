@@ -7,6 +7,14 @@ echo "user ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/user && \
 exit
 ```
 
+# create ssh key
+
+```cmd
+cd ~/.ssh
+ssh-keygen -o -t rsa -C "email@example.com"
+cat id_rsa.pub
+```
+
 ## Docker Host Setting in Windows
 
 in powershell
