@@ -7,7 +7,7 @@ echo "user ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/user && \
 exit
 ```
 
-## create ssh key
+## Create SSH key
 
 ```cmd
 cd ~/.ssh
