@@ -7,6 +7,9 @@ sudo apt install nodejs npm -y && \
 sudo npm i -g n -y && \
 sudo n stable && \
 sudo apt remove nodejs npm -y \
+sudo npm cache clean --force \
+sudo npm cache verify \
+sudo npm config set prefer-offline true \
 # install angular
 sudo npm install -g @angular/cli && \
 # install dotnet core
