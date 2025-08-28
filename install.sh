@@ -1,5 +1,6 @@
 sudo add-apt-repository -y ppa:git-core/ppa && \
 sudo apt update && sudo apt -y upgrade && \
+# sudo apt update && sudo apt full-upgrade
 # update git
 sudo apt-get install git -y && \
 # install node.js
