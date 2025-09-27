@@ -49,3 +49,7 @@ git config --global pull.rebase true
 git config --global credential.helper 'store --file ~/.git-credentials'
 git config --global user.name davidyujia
 git config --global user.email davidyujia@gmail.com
+
+## 
+sudo npm install -g @github/copilot@latest
+sudo npm install -g @google/gemini-cli@latest
