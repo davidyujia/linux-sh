@@ -30,13 +30,11 @@ sudo apt autoremove -y \
 # rider
 # sudo snap install rider --classic
 
-wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt-get update
-sudo apt-get -y install cuda-toolkit-12-6
-
-## remove
-rm -rf linux-sh
+# cuda
+# wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
+# sudo dpkg -i cuda-keyring_1.1-1_all.deb
+# sudo apt-get update
+# sudo apt-get -y install cuda-toolkit-12-6
 
 # create SSH key
 ssh-keygen -t rsa -b 4096 -f $HOME/.ssh/id_rsa -P ""
@@ -53,3 +51,6 @@ git config --global user.email davidyujia@gmail.com
 ## 
 sudo npm install -g @github/copilot@latest
 sudo npm install -g @google/gemini-cli@latest
+
+## remove
+rm -rf linux-sh
