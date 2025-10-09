@@ -51,6 +51,3 @@ git config --global user.email davidyujia@gmail.com
 ## 
 sudo npm install -g @github/copilot@latest
 sudo npm install -g @google/gemini-cli@latest
-
-## remove
-rm -rf linux-sh
