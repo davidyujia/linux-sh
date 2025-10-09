@@ -51,3 +51,7 @@ git config --global user.email davidyujia@gmail.com
 ## 
 sudo npm install -g @github/copilot@latest
 sudo npm install -g @google/gemini-cli@latest
+
+## font
+sudo ln -s /mnt/c/Windows/Fonts /usr/share/fonts/font
+fc-cache -fv
