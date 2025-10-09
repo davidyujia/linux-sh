@@ -4,6 +4,7 @@
 git clone https://github.com/davidyujia/linux-sh.git && \
 sudo sh ./linux-sh/install.sh && \
 echo "user ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/user && \
+rm -rf linux-sh && \
 exit
 ```
 
