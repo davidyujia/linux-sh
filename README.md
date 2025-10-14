@@ -11,7 +11,7 @@ exit
 
 ## Create SSH key
 
-```cmd
+```sh
 cd ~/.ssh
 ssh-keygen -o -t rsa -C "email@example.com"
 cat id_rsa.pub
