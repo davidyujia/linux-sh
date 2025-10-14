@@ -52,6 +52,10 @@ git config --global user.email davidyujia@gmail.com
 sudo npm install -g @github/copilot@latest
 sudo npm install -g @google/gemini-cli@latest
 
+## uv + spec-kit
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+
 ## font
 sudo ln -s /mnt/c/Windows/Fonts /usr/share/fonts/font
 fc-cache -fv
