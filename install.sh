@@ -52,6 +52,8 @@ sudo npm install -g @google/gemini-cli@latest
 
 ## uv + spec-kit
 curl -LsSf https://astral.sh/uv/install.sh | sh
+echo 'export PATH="$HOME/.local/bin:$PATH"' /.bashrc
+source ~/.bashrc
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 
 ## font
