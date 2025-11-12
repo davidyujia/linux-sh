@@ -15,7 +15,7 @@ sudo npm config set prefer-offline true \
 sudo npm install -g @angular/cli && \
 # install dotnet core
 sudo add-apt-repository ppa:dotnet/backports
-sudo apt-get install -y dotnet-sdk-9.0
+sudo apt-get install -y dotnet-sdk-10.0
 dotnet tool update -g linux-dev-certs
 dotnet linux-dev-certs install
 # autoremove
