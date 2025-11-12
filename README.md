@@ -4,8 +4,8 @@
 git clone https://github.com/davidyujia/linux-sh.git && \
 sudo sh ./linux-sh/install.sh && \
 echo "user ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/user && \
-git config --global user.name davidyujia && \
-git config --global user.email davidyujia@gmail.com && \
+git config --global user.name {username} && \
+git config --global user.email {usermail} && \
 exit
 ```
 
